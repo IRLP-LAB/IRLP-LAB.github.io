@@ -1,7 +1,7 @@
 {
   "name": "irlp-lab",
   "version": "0.1.0",
-  "homepage": "https://avneets2003.github.io/irlp-lab",
+  "homepage": "https://irlab.daiict.ac.in/irlp-lab",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
