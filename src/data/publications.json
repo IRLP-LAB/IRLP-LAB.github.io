@@ -1,0 +1,236 @@
+{
+  "2023": [
+    {
+      "authors": [
+        "Giorgio Maria Di Nunzio",
+        "Evangelos Kanoulas",
+        "Prasenjit Majumder"
+      ],
+      "title": "2nd Workshop on Augmented Intelligence in Technology-Assisted Review Systems (ALTARS)",
+      "journal": "Advances in Information Retrieval"
+    },
+    {
+      "authors": [
+        "Surupendu Gangopadhyay",
+        "Prasenjit Majumder"
+      ],
+      "title": "Text representation for direction prediction of share market",
+      "journal": "Expert Systems with Applications"
+    },
+    {
+      "authors": [
+        "Hiren Madhu",
+        "Shrey Satapara",
+        "Sandip Modha",
+        "Thomas Mandl",
+        "Prasenjit Majumder"
+      ],
+      "title": "Detecting offensive speech in conversational code-mixed dialogue on social media: A contextual dataset and benchmark experiments",
+      "journal": "Expert Systems with Applications"
+    },
+    {
+      "authors": [
+        "Tohida Rehman",
+        "Debarshi Kumar Sanyal",
+        "Prasenjit Majumder",
+        "Samiran Chattopadhyay"
+      ],
+      "title": "Named Entity Recognition Based Automatic Generation of Research Highlights"
+    },
+    {
+      "authors": [
+        "Srijoni Majumdar",
+        "Soumen Paul",
+        "Debjyoti Paul",
+        "Ayan Bandyopadhyay",
+        "Samiran Chattopadhyay",
+        "Partha Pratim Das",
+        "Paul D. Clough",
+        "Prasenjit Majumder"
+      ],
+      "title": "Generative AI for Software Metadata: Overview of the Information Retrieval in Software Engineering Track at FIRE 2023"
+    },
+    {
+      "authors": [
+        "Surupendu Gangopadhyay",
+        "Ganesh Epili",
+        "Prasenjit Majumder",
+        "Baban Gain",
+        "Ramakrishna Appicharla",
+        "Asif Ekbal",
+        "Arafat Ahsan",
+        "Dipti Sharma"
+      ],
+      "title": "Overview of MTIL Track at FIRE 2023: Machine Translation for Indian Languages",
+      "conference": "15th Annual Meeting of the Forum for Information Retrieval Evaluation",
+      "doi": "10.1145/3632754.3633481"
+    },
+    {
+      "authors": [
+        "Soumen Paul",
+        "Srijoni Majumdar",
+        "Ayan Bandyopadhyay",
+        "Bhargav Dave",
+        "Samiran Chattopadhyay",
+        "Partha Das",
+        "Paul D Clough",
+        "Prasenjit Majumder"
+      ],
+      "title": "Efficiency of Large Language Models to scale up Ground Truth: Overview of the IRSE Track at Forum for Information Retrieval 2023",
+      "conference": "15th Annual Meeting of the Forum for Information Retrieval Evaluation",
+      "doi": "10.1145/3632754.3633480"
+    }
+  ],
+  "2022": [
+    {
+      "authors": [
+        "Saptarshi Ghosh",
+        "Kripabandhu Ghosh",
+        "Debasis Ganguly",
+        "Arnab Bhattacharya",
+        "Partha Pratim Chakrabarti",
+        "Shouvik Guha",
+        "Arindam Pal",
+        "Koustav Rudra",
+        "Prasenjit Majumder",
+        "Dwaipayan Roy",
+        "Ayan Bandopadhyay",
+        "Procheta Sen",
+        "Paheli Bhattacharya",
+        "Aniket Deroy",
+        "Upal Bhattacharya",
+        "Subinay Adhikary",
+        "Subham Kumar Nigam"
+      ],
+      "title": "Report on the 2nd Symposium on Artificial Intelligence and Law (SAIL) 2022",
+      "journal": "ACM SIGIR Forum",
+      "doi": "10.1145/3582524.3582538"
+    },
+    {
+      "authors": [
+        "Srijoni Majumdar",
+        "Ayan Bandyopadhyay",
+        "Samiran Chattopadhyay",
+        "Partha Pratim Das",
+        "Paul D Clough",
+        "Prasenjit Majumder"
+      ],
+      "title": "Overview of the IRSE track at FIRE 2022: Information Retrieval in Software Engineering",
+      "conference": "Forum for Information Retrieval Evaluation"
+    },
+    {
+      "authors": [
+        "Shrey Satapara",
+        "Prasenjit Majumder",
+        "Thomas Mandl",
+        "Sandip Modha",
+        "Hiren Madhu",
+        "Tharindu Ranasinghe",
+        "Marcos Zampieri",
+        "Kai North",
+        "Damith Premasiri"
+      ],
+      "title": "Overview of the HASOC Subtrack at FIRE 2022: Hate Speech and Offensive Content Identification in English and Indo-Aryan Languages",
+      "conference": "14th Annual Meeting of the Forum for Information Retrieval Evaluation",
+      "doi": "10.1145/3574318.3574326"
+    },
+    {
+      "authors": [
+        "Procheta Sen",
+        "Sonal Mishra",
+        "Debasis Ganguly",
+        "Prasenjit Majumder"
+      ],
+      "title": "A Combination of 'Intra and Inter Collection' Relevance Models for Ad-hoc Retrieval in Precision Medicine"
+    },
+    {
+      "authors": [
+        "Sonal Mishra",
+        "Procheta Sen",
+        "Debasis Ganguly",
+        "Prasenjit Majumder"
+      ],
+      "title": "Relevance model augmented with inter-collection co-occurrence statistics for ad-hoc retrieval in precision medicine",
+      "conference": "2nd Joint Conference of the Information Retrieval Communities in Europe (CIRCLE 2022)"
+    },
+    {
+      "authors": [
+        "Giorgio Maria Di Nunzio",
+        "Evangelos Kanoulas",
+        "Prasenjit Majumder"
+      ],
+      "title": "Augmented Intelligence in Technology-Assisted Review Systems (ALTARS 2022): Evaluation Metrics and Protocols for eDiscovery and Systematic Review Systems",
+      "journal": "Advances in Information Retrieval"
+    },
+    {
+      "authors": [
+        "Srijoni Majumdar",
+        "Ayan Bandyopadhyay",
+        "Partha Pratim Das",
+        "Paul Clough",
+        "Samiran Chattopadhyay",
+        "Prasenjit Majumder"
+      ],
+      "title": "Can we predict useful comments in source codes? - Analysis of findings from Information Retrieval in Software Engineering Track @ FIRE 2022",
+      "conference": "14th Annual Meeting of the Forum for Information Retrieval Evaluation",
+      "doi": "10.1145/3574318.3574329"
+    }
+  ],
+  "2021": [
+    {
+      "authors": [
+        "Debasis Ganguly",
+        "Surupendu Gangopadhyay",
+        "Mandar Mitra",
+        "Prasenjit Majumder"
+      ],
+      "title": "Proceedings of the 13th Annual Meeting of the Forum for Information Retrieval Evaluation",
+      "conference": "Forum for Information Retrieval Evaluation"
+    },
+    {
+      "authors": [
+        "Vedant Parikh",
+        "Upal Bhattacharya",
+        "Parth Mehta",
+        "Ayan Bandyopadhyay",
+        "Paheli Bhattacharya",
+        "Kripa Ghosh",
+        "Saptarshi Ghosh",
+        "Arindam Pal",
+        "Arnab Bhattacharya",
+        "Prasenjit Majumder"
+      ],
+      "title": "AILA 2021: Shared task on Artificial Intelligence for Legal Assistance",
+      "conference": "Forum for Information Retrieval Evaluation",
+      "doi": "10.1145/3503162.3506571"
+    },
+    {
+      "authors": [
+        "Thomas Mandl",
+        "Sandip Modha",
+        "Gautam Kishore Shahi",
+        "Hiren Madhu",
+        "Shrey Satapara",
+        "Prasenjit Majumder",
+        "Johannes Schaefer",
+        "Tharindu Ranasinghe",
+        "Marcos Zampieri",
+        "Durgesh Nandini",
+        "Amit Kumar Jaiswal"
+      ],
+      "title": "Overview of the HASOC Subtrack at FIRE 2021: Hate Speech and Offensive Content Identification in English and Indo-Aryan Languages",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Sandip Modha",
+        "Prasenjit Majumder",
+        "Thomas Mandl",
+        "Rishab Singla"
+      ],
+      "title": "Design and analysis of microblog-based summarization system",
+      "journal": "Social Network Analysis and Mining",
+      "doi": "10.1007/s13278-021-00830-3"
+    }
+  ]
+}

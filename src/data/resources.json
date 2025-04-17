@@ -1,0 +1,16 @@
+{
+    "resources": [
+        {
+            "name": "Resource 1",
+            "description": "This is resource 1."
+        },
+        {
+            "name": "Resource 2",
+            "description": "This is resource 2."
+        },
+        {
+            "name": "Resource 3",
+            "description": "This is resource 3."
+        }
+    ]
+}

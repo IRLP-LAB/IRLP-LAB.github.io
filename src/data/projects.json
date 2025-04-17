@@ -1,0 +1,55 @@
+{
+    "projects": {
+        "ongoing": [
+            {
+                "project_title": "Discourse Integrated Dravidian Language to Dravidian Language Machine Translation (DL-DiscoMT) under National Language Translation Mission (NLTM)",
+                "pi": "Prof. Prasenjit Majumder",
+                "co_pi": "Prof. Maniklal Das",
+                "duration": "3 Years",
+                "funding_agency": "Govt. of India, Ministry of Electronics & IT",
+                "grant_amount": "INR 42.17 Lakhs"
+            },
+            {
+                "project_title": "Indian Language to Indian Language Translation - National Language Translation Mission (NLTM)",
+                "pi": "Prof. Prasenjit Majumder",
+                "co_pi": "Prof. Maniklal Das",
+                "duration": "3 Years",
+                "funding_agency": "Govt. of India, Ministry of Electronics & IT",
+                "grant_amount": "INR 1.4 Crore"
+            }
+        ],
+        "completed": [
+            {
+                "project_title": "Development of Cross Lingual Information (CLIA) System (Phase-II)",
+                "pi": "Prof. Prasenjit Majumder",
+                "co_pi": "Prof. Suman Mitra",
+                "duration": "3 Years",
+                "funding_agency": "DIT",
+                "grant_amount": "INR 74.00 Lakhs"
+            },
+            {
+                "project_title": "Platform for Crosslingual and Multilingual Event Monitoring in Indian Languages (IMPRINT)",
+                "pi": "Prof. Prasenjit Majumder",
+                "co_pi": "Prof. Suman Mitra",
+                "duration": "3 Years",
+                "funding_agency": "DIT",
+                "grant_amount": "INR 33.00 Lakhs"
+            },
+            {
+                "project_title": "Speech to Speech Machine Translation (SSMT) Pilot System",
+                "pi": "Prof. Prasenjit Majumder",
+                "co_pi": "Prof. Maniklal Das",
+                "duration": "1 Year",
+                "funding_agency": "Principal Scientific Advisor, PMO",
+                "grant_amount": "INR 13.65 Lakhs"
+            },
+            {
+                "project_title": "Research Consultancy to Build a Prototype of Financial News Recommender and Summarizer System",
+                "pi": "Prof. Prasenjit Majumder",
+                "duration": "2 Years",
+                "funding_agency": "Vista Intelligence Pvt. Ltd.",
+                "grant_amount": "INR 20.00 Lakhs"
+            }
+        ]
+    }
+}
