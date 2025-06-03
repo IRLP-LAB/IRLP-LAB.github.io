@@ -1,3 +1,0 @@
-const map = "https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d117359.93558036274!2d72.54651390041073!3d23.18851555308896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x395c2a3c9618d2c5%3A0xc54de484f986b1fa!2sDAIICT-campus%2C%20near%2C%20Reliance%20Cross%20Rd%2C%20Gandhinagar%2C%20Gujarat%20382007!3m2!1d23.188537!2d72.62891549999999!5e0!3m2!1sen!2sin!4v1730189504468!5m2!1sen!2sin";
-
-export default map;
