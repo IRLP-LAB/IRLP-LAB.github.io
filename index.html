@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="IRLP Lab Web Portal" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/logo192.png" />
+  <link rel="manifest" href="assets/manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>IRLP Lab</title>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo-container">
+        <span class="logo-text" onclick="location.href='index.html'" style="cursor: pointer;">IRLP Lab</span>
+      </div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <nav class="navbar" id="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">People ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="people_current.html">Current</a></li>
+              <li><a href="people-alumni.html">Alumni</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Research ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="research-projects.html">Projects</a></li>
+              <li><a href="research-resources.html">Resources</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Affairs ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="events.html">Events</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="media.html">Media Coverage</a></li>
+            </ul>
+          </li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="overlay">
+        <div class="hero-content">
+          <h2>Information Retrieval and Language Processing Lab</h2>
+          <p>Established in 2010, we specialize in information retrieval from unstructured documents and natural language processing of Indic languages, delivering research-based prototypes for societal benefit.</p>
+          <div class="hero-buttons">
+            <a href="#about" class="btn primary-btn">Our Research</a>
+            <a href="#work-with-us" class="btn secondary-btn">Work With Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- One-by-One Photo Viewer -->
+    <section class="photo-slider">
+      <div class="slider-wrapper">
+        <img id="slider-image" src="assets\IRLAB @ DAU GANDHINAGAR (2).jpg" alt="IRLP Lab Image" class="slider-image" />
+        <div class="slider-controls">
+          <button onclick="prevImage()">❮</button>
+          <button onclick="nextImage()">❯</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <div class="section-gap"></div>
+    <section id="about" class="about-irlp-section">
+      <div class="about-irlp-container">
+        <div class="about-irlp-left">
+          <h2>About IRLP Lab</h2>
+          <p>The Information Retrieval and Language Processing Lab (IRLP Lab) was established in 2010 to conduct research in information retrieval (IR) focused on retrieving information from unstructured documents and natural language processing (NLP), especially for Indic languages.</p>
+          <p>The objective of IRLP Lab is to conduct research and deliver prototypes that serve societal needs.</p>
+        </div>
+        <div class="about-irlp-right">
+          <div class="about-irlp-card">
+            <img src="assets/gif/ResearchFocus-ezgif.com-crop.gif" alt="Research Focus Icon" />
+            <div class="card-text">
+              <h4>Research Focus</h4>
+              <p>Cross-Lingual IR, Financial Text Mining, Legal AI</p>
+            </div>
+          </div>
+          <div class="about-irlp-card">
+            <img src="assets/gif/Funding Achievement.gif" alt="Funding Icon" />
+            <div class="card-text">
+              <h4>Funding Achievement</h4>
+              <p>Received ₹3.3 crore in funding for ongoing and completed projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Areas -->
+    <section class="research-area-section">
+      <h2 class="section-title">Research Areas</h2>
+      <p class="section-description">Our research spans across various domains of Information Retrieval and Natural Language Processing</p>
+      <div class="card-grid-fixed">
+        <div class="card">
+          <img src="assets/gif/Cross Lingual Information Retrieval.gif" alt="Language Icon" class="icon" />
+          <h3>Cross Lingual Information Retrieval</h3>
+          <p>Developing systems for retrieving information across different languages</p>
+        </div>
+        <div class="card">
+          <img src="assets/gif/Financial Text Mining.gif" alt="Finance Icon" class="icon" />
+          <h3>Financial Text Mining</h3>
+          <p>Analyzing and extracting insights from financial documents and data</p>
+        </div>
+        <div class="card">
+          <img src="assets/gif/LegelAI.gif" alt="Legal Icon" class="icon" />
+          <h3>Legal AI</h3>
+          <p>Applying AI techniques to legal document analysis and processing</p>
+        </div>
+        <div class="card">
+          <img src="assets/gif/recommendation_system.gif" alt="Star Icon" class="icon" />
+          <h3>Recommendation Systems</h3>
+          <p>Building intelligent systems for personalized content recommendations</p>
+        </div>
+        <div class="card">
+          <img src="assets/gif/machinetranslation.gif" alt="Translate Icon" class="icon" />
+          <h3>Machine Translation</h3>
+          <p>Developing systems for automated translation between languages</p>
+        </div>
+        <div class="card">
+          <img src="assets/gif/Social Media Analytics.gif" alt="Social Media Icon" class="icon" />
+          <h3>Social Media Analytics</h3>
+          <p>Analyzing social media data for insights and patterns</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events & Work With Us -->
+    <div class="info-section">
+      <div class="info-card events-card">
+        <h2>Upcoming Events</h2>
+        <div class="event-item">
+          <img src="assets/gif/upcomingevent.gif" alt="Event Icon" class="icon" />
+          <div>
+            <strong>Forum for Information Retrieval Evaluation (FIRE 2025)</strong><br>
+            <span>12 December 2025 to 15 December 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card work-card" id="work-with-us">
+        <h2>Want to Work with Us?</h2>
+        <p>To apply for the <strong>M.Tech. / PhD position</strong>, <a href="#">click here</a>.</p>
+        <p>To apply for the <strong>Research Assistant (RA) / Post Doctoral position</strong>, drop a mail to <a href="mailto:irlab@.ac.in">irlab@dau.ac.in<a>.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-icons">
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="footer-text">
+        Information Retrieval and Language Processing Lab (IRLP Lab)
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
