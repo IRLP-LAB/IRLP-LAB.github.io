@@ -4,10 +4,7 @@ const images = [
   'assets/gallary/fire_1.jpg',
   'assets/gallary/fire_12.jpg',
   'assets/gallary/fire_9.jpg',
-  'assets/gallary/fire_10.jpg',
-  'assets/gallary/14.jpeg',
-  'assets/gallary/53.jpeg',
-  'assets/gallary/54.jpeg'
+  'assets/gallary/fire_10.jpg'
   
   
 ];
