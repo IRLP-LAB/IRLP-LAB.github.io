@@ -124,17 +124,17 @@
 </div>
 
 <script>
-  const zoomImage = document.querySelector('.zoom-target');
+  const zoomImages = document.querySelectorAll('.zoom-target');
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightboxImg');
   const closeBtn = document.getElementById('closeLightbox');
 
-  if (zoomImage) {
-    zoomImage.addEventListener('click', () => {
-      lightboxImg.src = zoomImage.src;
+  zoomImages.forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
       lightbox.classList.add('active');
     });
-  }
+  });
 
   closeBtn.addEventListener('click', () => {
     lightbox.classList.remove('active');
