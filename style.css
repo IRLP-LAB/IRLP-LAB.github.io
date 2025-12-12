@@ -1586,66 +1586,170 @@ body {
 }
 
 
-/* gallery.css */
-/* Base container */
+/* ================================
+   Gallery Page Wrapper
+================================ */
 .gallery-page {
   max-width: 1275px;
-  margin: 5PX auto;
-  padding: 10px 20px; /* ✅ Adds 20px space on both left and right */
+  margin: auto;
+  padding: 20px;
   font-family: Arial, sans-serif;
 }
 
+/* Extra spacing before footer ONLY here */
+.gallery-spacing {
+  margin-bottom: 150px;
+}
+
+/* Extra spacing before footer for media page */
+.media-spacing {
+  margin-bottom: 150px;
+}
+
 .gallery-title {
-  text-align: left; /* changed from center to left */
   font-size: 1.9rem;
+  margin-bottom: 30px;
+}
+
+/* ================================
+   Folder Grid (Main Gallery)
+================================ */
+.folder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 48px;
+}
+
+/* Folder Card */
+.folder-card {
+  background: #f4f4f4;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease;
+}
+
+.folder-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Folder Cover (same ratio) */
+.folder-cover {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+/* Folder text */
+.folder-info {
+  padding: 12px;
+  text-align: center;
+  background: #fff;
+}
+
+.folder-name {
   font-weight: 600;
-  margin-bottom: 10px;
-  margin-top: 15px;
-  color: #000;
+  margin: 0;
+}
+
+.folder-count {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+/* ================================
+   Inside Folder Image Grid
+================================ */
+.gallery-section-title {
+  display: none;
+  margin: 30px 0 10px;
+  font-size: 1.5rem;
 }
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Bigger & rectangular */
-  gap: 10px; /* Less space between images */
+  display: none;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 7px;
 }
 
-
-/* Individual gallery items */
+/* Image card */
 .gallery-item {
+  width: 100%;
+  aspect-ratio: 12 / 8;
   overflow: hidden;
-  border-radius: 8px;
-  height: 180px; /* Fixed height to make it rectangular */
+  border-radius: 16px;
   cursor: pointer;
-  transition: transform 0.3s ease;
-  background-color: #f2f2f2;
+  background: #eee;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .gallery-item img {
   width: 100%;
-  height: 100%; /* Take full box height */
+  height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
   display: block;
+  transition: transform 0.35s ease;
 }
-
 
 .gallery-item:hover img {
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
 
-/* Zoom overlay styles */
+/* ================================
+   Gallery View Container
+================================ */
+.gallery-view {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  position: relative;
+}
+
+/* ================================
+   Back Button (folder view only)
+================================ */
+.back-btn {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.back-btn:hover {
+  background: #f5f5f5;
+}
+
+/* ================================
+   Zoom Overlay
+================================ */
 .zoom-overlay {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.85);
+  inset: 0;
+  background: rgba(0,0,0,0.88);
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 99999;
 }
 
 .zoom-overlay.active {
@@ -1655,7 +1759,7 @@ body {
 .zoom-overlay img {
   max-width: 90%;
   max-height: 90%;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .close-btn {
@@ -1665,35 +1769,37 @@ body {
   font-size: 2rem;
   color: white;
   cursor: pointer;
-  z-index: 1001;
 }
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .gallery-item img {
-    height: 200px;
-  }
-
-  .gallery-title {
-    font-size: 1.5rem;
-  }
-
-  .close-btn {
-    top: 15px;
-    right: 20px;
-    font-size: 1.8rem;
-  }
+/* ================================
+   Zoom Nav Buttons (Next/Prev)
+================================ */
+.zoom-prev, .zoom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.85);
+  border: none;
+  padding: 12px 16px;
+  font-size: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100000;
 }
 
-@media (max-width: 480px) {
-  .gallery-item img {
-    height: 160px;
-  }
-
-  .gallery-title {
-    font-size: 1.3rem;
-  }
+.zoom-prev:hover, .zoom-next:hover {
+  background: #fff;
 }
+
+.zoom-prev {
+  left: 40px;
+}
+
+.zoom-next {
+  right: 40px;
+}
+
+/* -------- */
 
 
 /* media css */
