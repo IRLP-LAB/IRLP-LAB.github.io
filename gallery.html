@@ -61,7 +61,7 @@
 
   <h2 class="gallery-title">Gallery</h2>
 
-  <!-- Folder View -->
+  <!-- ================= Folder View ================= -->
   <div class="folder-grid" id="folderGrid">
 
     <div class="folder-card" onclick="openFolder('Fire Forum Conference','fire')">
@@ -78,14 +78,14 @@
       </div>
     </div>
 
-    <div class="folder-card" onclick="openFolder('PHD Defence','PHDDefence')">
+    <div class="folder-card" onclick="openFolder('PHD Defence','PHD_Defence')">
       <img src="assets/gallary/PHD_Defence/1.jpeg" class="folder-cover">
       <div class="folder-info">
         <p class="folder-name">PHD Defence</p>
       </div>
     </div>
 
-    <div class="folder-card" onclick="openFolder('ACM India Annual Event 2020','ACM_India_Annual_Event_2020')">
+    <div class="folder-card" onclick="openFolder('ACM India Annual Event 2020','ACM_India_2020')">
       <img src="assets/gallary/ACM_India_2020/1.jpeg" class="folder-cover">
       <div class="folder-info">
         <p class="folder-name">ACM India Annual Event 2020</p>
@@ -94,25 +94,28 @@
 
   </div>
 
-  <!-- ===== Images View ===== -->
+  <!-- ================= Images View ================= -->
   <h3 class="gallery-section-title" id="sectionTitle"></h3>
 
+  <button class="back-btn" id="backBtn" onclick="goBack()">⬅</button>
+
   <div class="gallery-view">
-    <button class="back-btn" id="backBtn" onclick="goBack()">⬅</button>
     <div class="gallery-grid" id="imageGrid"></div>
   </div>
 
 </main>
 
-<!-- ================= ZOOM ================= -->
+<!-- ================= ZOOM VIEW ================= -->
 <div class="zoom-overlay" id="zoomOverlay">
-  <span class="close-btn" onclick="closeZoom()">&times;</span>
 
-  <!-- NEW Buttons -->
-  <button class="zoom-prev" onclick="prevImage()">&#10094;</button>
-  <button class="zoom-next" onclick="nextImage()">&#10095;</button>
+  <button class="zoom-prev">&#10094;</button>
+  <button class="zoom-next">&#10095;</button>
+  <span class="close-btn">&times;</span>
 
-  <img id="zoomedImage">
+  <div class="zoom-image-wrapper">
+    <img id="zoomedImage" />
+  </div>
+
 </div>
 
 <!-- ================= SCRIPT ================= -->
@@ -233,41 +236,7 @@ const galleryData = {
     "assets/gallary/fire-event/111.jpeg",
     "assets/gallary/fire-event/112.jpeg",
     "assets/gallary/fire-event/113.jpeg",
-    "assets/gallary/fire-event/114.jpeg",
-    "assets/gallary/fire-event/115.jpeg",
-    "assets/gallary/fire-event/116.jpeg",
-    "assets/gallary/fire-event/117.jpeg",
-    "assets/gallary/fire-event/118.jpeg",
-    "assets/gallary/fire-event/119.jpeg",
-    "assets/gallary/fire-event/120.jpeg",
-    "assets/gallary/fire-event/121.jpeg",
-    "assets/gallary/fire-event/122.jpeg",
-    "assets/gallary/fire-event/123.jpeg", 
-    "assets/gallary/fire-event/124.jpeg",
-    "assets/gallary/fire-event/125.jpeg",
-    "assets/gallary/fire-event/126.jpeg",
-    "assets/gallary/fire-event/127.jpeg",
-    "assets/gallary/fire-event/128.jpeg",
-    "assets/gallary/fire-event/129.jpeg",
-    "assets/gallary/fire-event/130.jpeg",
-    "assets/gallary/fire-event/131.jpeg",
-    "assets/gallary/fire-event/132.jpeg",
-    "assets/gallary/fire-event/133.jpeg",
-    "assets/gallary/fire-event/134.jpeg",
-    "assets/gallary/fire-event/135.jpeg",
-    "assets/gallary/fire-event/136.jpeg",
-    "assets/gallary/fire-event/137.jpeg",
-    "assets/gallary/fire-event/138.jpeg",
-    "assets/gallary/fire-event/139.jpeg",
-    "assets/gallary/fire-event/140.jpeg",
-    "assets/gallary/fire-event/141.jpeg",
-    "assets/gallary/fire-event/142.jpeg",
-    "assets/gallary/fire-event/143.jpeg",
-    "assets/gallary/fire-event/144.jpeg",
-    "assets/gallary/fire-event/145.jpeg",
-    "assets/gallary/fire-event/146.jpeg", 
-    "assets/gallary/fire-event/147.jpeg",
-    "assets/gallary/fire-event/148.jpeg",
+    
 
   ],
   RegICON2025: [
@@ -295,9 +264,11 @@ const galleryData = {
 };
 
 
+/* ================= STATE ================= */
 let currentImages = [];
 let currentIndex = 0;
 
+/* ================= ELEMENTS ================= */
 const folderGrid = document.getElementById("folderGrid");
 const imageGrid = document.getElementById("imageGrid");
 const backBtn = document.getElementById("backBtn");
@@ -305,17 +276,28 @@ const sectionTitle = document.getElementById("sectionTitle");
 const zoomOverlay = document.getElementById("zoomOverlay");
 const zoomedImage = document.getElementById("zoomedImage");
 
-/* OPEN FOLDER */
+/* ================= EVENT LISTENERS ================= */
+document.querySelector('.zoom-prev').addEventListener('click', prevImage);
+document.querySelector('.zoom-next').addEventListener('click', nextImage);
+document.querySelector('.close-btn').addEventListener('click', closeZoom);
+
+/* ================= FUNCTIONS ================= */
 function openFolder(title, key) {
-  folderGrid.style.display = "none";
-  imageGrid.style.display = "grid";
-  backBtn.style.display = "flex";   // show
-  sectionTitle.style.display = "block";
-  sectionTitle.textContent = title;
-  imageGrid.innerHTML = "";
+  if (!galleryData[key]) {
+    console.error("Invalid gallery key:", key);
+    return;
+  }
 
   currentImages = galleryData[key];
   currentIndex = 0;
+
+  folderGrid.style.display = "none";
+  imageGrid.style.display = "grid";
+  backBtn.style.display = "flex";
+  sectionTitle.style.display = "block";
+  sectionTitle.textContent = title;
+
+  imageGrid.innerHTML = "";
 
   currentImages.forEach((src, index) => {
     const div = document.createElement("div");
@@ -325,7 +307,6 @@ function openFolder(title, key) {
   });
 }
 
-/* BACK TO MAIN GALLERY */
 function goBack() {
   folderGrid.style.display = "grid";
   imageGrid.style.display = "none";
@@ -333,19 +314,16 @@ function goBack() {
   sectionTitle.style.display = "none";
 }
 
-/* ZOOM IMAGE */
 function zoomImage(index) {
   currentIndex = index;
   zoomedImage.src = currentImages[currentIndex];
   zoomOverlay.classList.add("active");
 }
 
-/* CLOSE ZOOM */
 function closeZoom() {
   zoomOverlay.classList.remove("active");
 }
 
-/* NEXT / PREVIOUS */
 function nextImage() {
   currentIndex = (currentIndex + 1) % currentImages.length;
   zoomedImage.src = currentImages[currentIndex];
@@ -355,8 +333,9 @@ function prevImage() {
   currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
   zoomedImage.src = currentImages[currentIndex];
 }
-</script>
 
+
+</script>
 
 
 

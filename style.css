@@ -1588,6 +1588,8 @@ body {
 
 /* ================================
    Gallery Page Wrapper
+/* ================================
+   Gallery Page Wrapper
 ================================ */
 .gallery-page {
   max-width: 1275px;
@@ -1596,12 +1598,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Extra spacing before footer ONLY here */
-.gallery-spacing {
-  margin-bottom: 150px;
-}
-
-/* Extra spacing before footer for media page */
+.gallery-spacing,
 .media-spacing {
   margin-bottom: 150px;
 }
@@ -1612,7 +1609,7 @@ body {
 }
 
 /* ================================
-   Folder Grid (Main Gallery)
+   Folder Grid
 ================================ */
 .folder-grid {
   display: grid;
@@ -1621,7 +1618,6 @@ body {
   margin-top: 48px;
 }
 
-/* Folder Card */
 .folder-card {
   background: #f4f4f4;
   border-radius: 16px;
@@ -1635,15 +1631,13 @@ body {
   transform: translateY(-6px);
 }
 
-/* Folder Cover (same ratio) */
 .folder-cover {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16/10;
   object-fit: cover;
   display: block;
 }
 
-/* Folder text */
 .folder-info {
   padding: 12px;
   text-align: center;
@@ -1655,13 +1649,8 @@ body {
   margin: 0;
 }
 
-.folder-count {
-  font-size: 0.9rem;
-  color: gray;
-}
-
 /* ================================
-   Inside Folder Image Grid
+   Image Grid
 ================================ */
 .gallery-section-title {
   display: none;
@@ -1675,10 +1664,9 @@ body {
   gap: 7px;
 }
 
-/* Image card */
 .gallery-item {
   width: 100%;
-  aspect-ratio: 12 / 8;
+  aspect-ratio: 12/8;
   overflow: hidden;
   border-radius: 16px;
   cursor: pointer;
@@ -1699,17 +1687,7 @@ body {
 }
 
 /* ================================
-   Gallery View Container
-================================ */
-.gallery-view {
-  display: flex;
-  align-items: flex-start;
-  gap: 0;
-  position: relative;
-}
-
-/* ================================
-   Back Button (folder view only)
+   Back Button
 ================================ */
 .back-btn {
   position: fixed;
@@ -1717,21 +1695,16 @@ body {
   top: 50%;
   transform: translateY(-50%);
   z-index: 9999;
-
   width: 45px;
   height: 45px;
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 12px;
-
   font-size: 22px;
-  font-weight: bold;
   cursor: pointer;
-
   display: none;
   align-items: center;
   justify-content: center;
-
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
@@ -1747,34 +1720,46 @@ body {
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.88);
-  justify-content: center;
-  align-items: center;
   z-index: 99999;
+  align-items: center;
+  justify-content: center;
 }
 
 .zoom-overlay.active {
   display: flex;
 }
 
-.zoom-overlay img {
+.zoom-image-wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.zoom-image-wrapper img {
   max-width: 90%;
   max-height: 90%;
   border-radius: 12px;
 }
 
+/* ================================
+   Zoom Controls
+================================ */
 .close-btn {
   position: absolute;
   top: 20px;
   right: 30px;
   font-size: 2rem;
-  color: white;
+  color: #fff;
   cursor: pointer;
+  z-index: 100001;
 }
 
-/* ================================
-   Zoom Nav Buttons (Next/Prev)
-================================ */
-.zoom-prev, .zoom-next {
+.zoom-prev,
+.zoom-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1784,10 +1769,11 @@ body {
   font-size: 28px;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 100000;
+  z-index: 100001;
 }
 
-.zoom-prev:hover, .zoom-next:hover {
+.zoom-prev:hover,
+.zoom-next:hover {
   background: #fff;
 }
 
@@ -1798,9 +1784,7 @@ body {
 .zoom-next {
   right: 40px;
 }
-
-/* -------- */
-
+/* ========== */
 
 /* media css */
 .media-container {
