@@ -64,10 +64,10 @@
   <!-- ================= Folder View ================= -->
   <div class="folder-grid" id="folderGrid">
 
-    <div class="folder-card" onclick="openFolder('Fire Forum Conference','fire')">
-      <img src="assets/gallary/fire-event/1.jpeg" class="folder-cover">
+    <div class="folder-card" onclick="openFolder('Fire Forum Conference 2025','fire2025')">
+      <img src="assets/gallary/fire-event_2025/1.jpeg" class="folder-cover">
       <div class="folder-info">
-        <p class="folder-name">Fire Forum Conference</p>
+        <p class="folder-name">Fire Forum Conference 2025</p>
       </div>
     </div>
 
@@ -78,19 +78,44 @@
       </div>
     </div>
 
-    <div class="folder-card" onclick="openFolder('PHD Defence','PHD_Defence')">
+    <div class="folder-card" onclick="openFolder('Fire Forum Conference 2024','fire2024')">
+      <img src="assets/gallary/fire-event_2024/1.jpeg" class="folder-cover">
+      <div class="folder-info">
+        <p class="folder-name">Fire Forum Conference 2024</p>
+      </div>
+    </div>
+
+    <div class="folder-card" onclick="openFolder('Fire Forum Conference 2023','fire2023')">
+      <img src="assets/gallary/fire-event_2023/1.jpeg" class="folder-cover">
+      <div class="folder-info">
+        <p class="folder-name">Fire Forum Conference 2023</p>
+      </div>
+    </div>
+
+    <div class="folder-card" onclick="openFolder('ACM India Annual Event 2020','ACM_India_Annual_Event_2020')">
+      <img src="assets/gallary/ACM_India_2020/1.jpeg" class="folder-cover">
+      <div class="folder-info">
+        <p class="folder-name">ACM India Annual Event 2020</p>
+      </div>
+    </div>
+
+    <div class="folder-card" onclick="openFolder('Fire Forum Conference 2007-2022','fire2007')">
+      <img src="assets/gallary/fire-event_2007-2022/1.jpeg" class="folder-cover">
+      <div class="folder-info">
+        <p class="folder-name">Fire Forum Conference 2007-2022</p>
+      </div>
+    </div>
+
+    
+
+    <div class="folder-card" onclick="openFolder('PHD Defence','PHDDefence')">
       <img src="assets/gallary/PHD_Defence/1.jpeg" class="folder-cover">
       <div class="folder-info">
         <p class="folder-name">PHD Defence</p>
       </div>
     </div>
 
-    <div class="folder-card" onclick="openFolder('ACM India Annual Event 2020','ACM_India_2020')">
-      <img src="assets/gallary/ACM_India_2020/1.jpeg" class="folder-cover">
-      <div class="folder-info">
-        <p class="folder-name">ACM India Annual Event 2020</p>
-      </div>
-    </div>
+    
 
   </div>
 
@@ -122,123 +147,200 @@
 <script>
 /* ✅ DEFINE IMAGE LISTS HERE */
 const galleryData = {
-  fire: [
-    "assets/gallary/fire-event/1.jpeg",
-    "assets/gallary/fire-event/2.jpeg",
-    "assets/gallary/fire-event/3.jpeg",
-    "assets/gallary/fire-event/4.jpeg",
-    "assets/gallary/fire-event/5.jpeg",
-    "assets/gallary/fire-event/6.jpeg",
-    "assets/gallary/fire-event/7.jpeg",
-    "assets/gallary/fire-event/8.jpeg",
-    "assets/gallary/fire-event/9.jpeg",
-    "assets/gallary/fire-event/10.jpeg",
-    "assets/gallary/fire-event/11.jpeg",
-    "assets/gallary/fire-event/12.jpeg",
-    "assets/gallary/fire-event/13.jpeg",
-    "assets/gallary/fire-event/14.jpeg",    
-    "assets/gallary/fire-event/15.jpeg",
-    "assets/gallary/fire-event/16.jpeg",
-    "assets/gallary/fire-event/17.jpeg",
-    "assets/gallary/fire-event/18.jpeg",
-    "assets/gallary/fire-event/19.jpeg",
-    "assets/gallary/fire-event/20.jpeg",  
-    "assets/gallary/fire-event/21.jpeg",
-    "assets/gallary/fire-event/22.jpeg",  
-    "assets/gallary/fire-event/23.jpeg",
-    "assets/gallary/fire-event/24.jpeg",
-    "assets/gallary/fire-event/25.jpeg",
-    "assets/gallary/fire-event/26.jpeg",
-    "assets/gallary/fire-event/27.jpeg",
-    "assets/gallary/fire-event/28.jpeg",
-    "assets/gallary/fire-event/29.jpeg",
-    "assets/gallary/fire-event/30.jpeg",
-    "assets/gallary/fire-event/31.jpeg",
-    "assets/gallary/fire-event/32.jpeg",  
-    "assets/gallary/fire-event/33.jpeg",
-    "assets/gallary/fire-event/34.jpeg",  
-    "assets/gallary/fire-event/35.jpeg",
-    "assets/gallary/fire-event/36.jpeg",
-    "assets/gallary/fire-event/37.jpeg",
-    "assets/gallary/fire-event/38.jpeg",
-    "assets/gallary/fire-event/39.jpeg",
-    "assets/gallary/fire-event/40.jpeg",
-    "assets/gallary/fire-event/41.jpeg",
-    "assets/gallary/fire-event/42.jpeg",
-    "assets/gallary/fire-event/43.jpeg",
-    "assets/gallary/fire-event/44.jpeg",
-    "assets/gallary/fire-event/45.jpeg",
-    "assets/gallary/fire-event/46.jpeg",
-    "assets/gallary/fire-event/47.jpeg",
-    "assets/gallary/fire-event/48.jpeg",
-    "assets/gallary/fire-event/49.jpeg",
-    "assets/gallary/fire-event/50.jpeg",
-    "assets/gallary/fire-event/51.jpeg",
-    "assets/gallary/fire-event/52.jpeg",
-    "assets/gallary/fire-event/53.jpeg",
-    "assets/gallary/fire-event/54.jpeg",
-    "assets/gallary/fire-event/55.jpeg",
-    "assets/gallary/fire-event/56.jpeg",
-    "assets/gallary/fire-event/57.jpeg",
-    "assets/gallary/fire-event/58.jpeg",
-    "assets/gallary/fire-event/59.jpeg",
-    "assets/gallary/fire-event/60.jpeg",
-    "assets/gallary/fire-event/61.jpeg",
-    "assets/gallary/fire-event/62.jpeg",
-    "assets/gallary/fire-event/63.jpeg",
-    "assets/gallary/fire-event/64.jpeg",
-    "assets/gallary/fire-event/65.jpeg",
-    "assets/gallary/fire-event/66.jpeg",
-    "assets/gallary/fire-event/67.jpeg",
-    "assets/gallary/fire-event/68.jpeg",
-    "assets/gallary/fire-event/69.jpeg",  
-    "assets/gallary/fire-event/70.jpeg",
-    "assets/gallary/fire-event/71.jpeg",
-    "assets/gallary/fire-event/72.jpeg",  
-    "assets/gallary/fire-event/73.jpeg",
-    "assets/gallary/fire-event/74.jpeg",
-    "assets/gallary/fire-event/75.jpeg",
-    "assets/gallary/fire-event/76.jpeg",
-    "assets/gallary/fire-event/77.jpeg",
-    "assets/gallary/fire-event/78.jpeg",
-    "assets/gallary/fire-event/79.jpeg",
-    "assets/gallary/fire-event/80.jpeg",
-    "assets/gallary/fire-event/81.jpeg",
-    "assets/gallary/fire-event/82.jpeg",
-    "assets/gallary/fire-event/83.jpeg",
-    "assets/gallary/fire-event/84.jpeg",
-    "assets/gallary/fire-event/85.jpeg",
-    "assets/gallary/fire-event/86.jpeg",
-    "assets/gallary/fire-event/87.jpeg",
-    "assets/gallary/fire-event/88.jpeg",
-    "assets/gallary/fire-event/89.jpeg",
-    "assets/gallary/fire-event/90.jpeg",
-    "assets/gallary/fire-event/91.jpeg",
-    "assets/gallary/fire-event/92.jpeg",  
-    "assets/gallary/fire-event/93.jpeg",
-    "assets/gallary/fire-event/94.jpeg",
-    "assets/gallary/fire-event/95.jpeg",
-    "assets/gallary/fire-event/96.jpeg",  
-    "assets/gallary/fire-event/97.jpeg",
-    "assets/gallary/fire-event/98.jpeg",
-    "assets/gallary/fire-event/99.jpeg",
-    "assets/gallary/fire-event/100.jpeg",
-    "assets/gallary/fire-event/101.jpeg",
-    "assets/gallary/fire-event/102.jpeg", 
-    "assets/gallary/fire-event/103.jpeg",
-    "assets/gallary/fire-event/104.jpeg",
-    "assets/gallary/fire-event/105.jpeg",
-    "assets/gallary/fire-event/106.jpeg",
-    "assets/gallary/fire-event/107.jpeg",
-    "assets/gallary/fire-event/108.jpeg",
-    "assets/gallary/fire-event/109.jpeg",
-    "assets/gallary/fire-event/110.jpeg",
-    "assets/gallary/fire-event/111.jpeg",
-    "assets/gallary/fire-event/112.jpeg",
-    "assets/gallary/fire-event/113.jpeg",
-    
+  fire2007: [
+    "assets/gallary/fire-event_2007-2022/1.jpeg",
+    "assets/gallary/fire-event_2007-2022/2.jpeg",
+    "assets/gallary/fire-event_2007-2022/3.jpeg",
+    "assets/gallary/fire-event_2007-2022/4.jpeg",
+    "assets/gallary/fire-event_2007-2022/5.jpeg",
+    "assets/gallary/fire-event_2007-2022/6.jpeg",
+    "assets/gallary/fire-event_2007-2022/7.jpeg",
+    "assets/gallary/fire-event_2007-2022/8.jpeg",
+    "assets/gallary/fire-event_2007-2022/9.jpeg",
+    "assets/gallary/fire-event_2007-2022/10.jpeg",
+    "assets/gallary/fire-event_2007-2022/11.jpeg",
+    "assets/gallary/fire-event_2007-2022/12.jpeg",
+    "assets/gallary/fire-event_2007-2022/13.jpeg",
+    "assets/gallary/fire-event_2007-2022/14.jpeg",
+    "assets/gallary/fire-event_2007-2022/15.jpeg",
+    "assets/gallary/fire-event_2007-2022/16.jpeg",
+    "assets/gallary/fire-event_2007-2022/17.jpeg",
+    "assets/gallary/fire-event_2007-2022/18.jpeg",
+    "assets/gallary/fire-event_2007-2022/19.jpeg",
+    "assets/gallary/fire-event_2007-2022/20.jpeg",
+    "assets/gallary/fire-event_2007-2022/21.jpeg",
+    "assets/gallary/fire-event_2007-2022/22.jpeg",
+    "assets/gallary/fire-event_2007-2022/23.jpeg",
+    "assets/gallary/fire-event_2007-2022/24.jpeg",
+    "assets/gallary/fire-event_2007-2022/25.jpeg",
+    "assets/gallary/fire-event_2007-2022/26.jpeg",
+    "assets/gallary/fire-event_2007-2022/27.jpeg",
+    "assets/gallary/fire-event_2007-2022/28.jpeg",
+    "assets/gallary/fire-event_2007-2022/29.jpeg",
+    "assets/gallary/fire-event_2007-2022/30.jpeg",
+    "assets/gallary/fire-event_2007-2022/31.jpeg",  
+    "assets/gallary/fire-event_2007-2022/32.jpeg",
+    "assets/gallary/fire-event_2007-2022/33.jpeg",
+    "assets/gallary/fire-event_2007-2022/34.jpeg",
+    "assets/gallary/fire-event_2007-2022/35.jpeg",
+    "assets/gallary/fire-event_2007-2022/36.jpeg",
+    "assets/gallary/fire-event_2007-2022/37.jpeg",
+
+
+
+
+
+
 
   ],
+  fire2023: [
+    "assets/gallary/fire-event_2023/1.jpeg",
+    "assets/gallary/fire-event_2023/2.jpeg",
+    "assets/gallary/fire-event_2023/3.jpeg",
+    "assets/gallary/fire-event_2023/4.jpeg",
+    "assets/gallary/fire-event_2023/5.jpeg",
+    "assets/gallary/fire-event_2023/6.jpeg",
+    "assets/gallary/fire-event_2023/7.jpeg",
+    "assets/gallary/fire-event_2023/8.jpeg",
+    "assets/gallary/fire-event_2023/9.jpeg",    
+    "assets/gallary/fire-event_2023/10.jpeg",
+    "assets/gallary/fire-event_2023/11.jpeg",
+    "assets/gallary/fire-event_2023/12.jpeg",
+    "assets/gallary/fire-event_2023/13.jpeg", 
+    "assets/gallary/fire-event_2023/14.jpeg",
+    "assets/gallary/fire-event_2023/15.jpeg", 
+    "assets/gallary/fire-event_2023/16.jpeg",
+    "assets/gallary/fire-event_2023/17.jpeg", 
+    "assets/gallary/fire-event_2023/18.jpeg",
+    "assets/gallary/fire-event_2023/19.jpeg",
+    
+
+
+
+
+
+
+  ],
+  fire2024: [
+    "assets/gallary/fire-event_2024/1.jpeg",
+    "assets/gallary/fire-event_2024/2.jpeg",
+    "assets/gallary/fire-event_2024/3.jpeg",  
+    "assets/gallary/fire-event_2024/4.jpeg",
+    "assets/gallary/fire-event_2024/5.jpeg",
+    "assets/gallary/fire-event_2024/6.jpeg",
+    "assets/gallary/fire-event_2024/7.jpeg",
+    "assets/gallary/fire-event_2024/8.jpeg",
+    "assets/gallary/fire-event_2024/9.jpeg",
+    "assets/gallary/fire-event_2024/10.jpeg",
+    "assets/gallary/fire-event_2024/11.jpeg",
+    "assets/gallary/fire-event_2024/12.jpeg",
+    "assets/gallary/fire-event_2024/13.jpeg",
+    "assets/gallary/fire-event_2024/14.jpeg",
+    "assets/gallary/fire-event_2024/15.jpeg",   
+    "assets/gallary/fire-event_2024/16.jpeg",
+    "assets/gallary/fire-event_2024/17.jpeg",
+    "assets/gallary/fire-event_2024/18.jpeg",
+    "assets/gallary/fire-event_2024/19.jpeg", 
+    "assets/gallary/fire-event_2024/20.jpeg",
+    "assets/gallary/fire-event_2024/21.jpeg",
+    "assets/gallary/fire-event_2024/22.jpeg",
+    "assets/gallary/fire-event_2024/23.jpeg",
+    "assets/gallary/fire-event_2024/24.jpeg", 
+    "assets/gallary/fire-event_2024/25.jpeg",
+    "assets/gallary/fire-event_2024/26.jpeg",
+    "assets/gallary/fire-event_2024/27.jpeg",
+    "assets/gallary/fire-event_2024/28.jpeg",
+    "assets/gallary/fire-event_2024/29.jpeg",
+    "assets/gallary/fire-event_2024/30.jpeg",
+    "assets/gallary/fire-event_2024/31.jpeg",
+    "assets/gallary/fire-event_2024/32.jpeg",
+    "assets/gallary/fire-event_2024/33.jpeg",
+    "assets/gallary/fire-event_2024/34.jpeg",
+    "assets/gallary/fire-event_2024/35.jpeg",
+    "assets/gallary/fire-event_2024/36.jpeg",
+    "assets/gallary/fire-event_2024/37.jpeg",
+    "assets/gallary/fire-event_2024/38.jpeg",
+    "assets/gallary/fire-event_2024/39.jpeg", 
+    "assets/gallary/fire-event_2024/40.jpeg",
+    "assets/gallary/fire-event_2024/41.jpeg",
+    "assets/gallary/fire-event_2024/42.jpeg", 
+    "assets/gallary/fire-event_2024/43.jpeg",
+    "assets/gallary/fire-event_2024/44.jpeg",
+    "assets/gallary/fire-event_2024/45.jpeg",
+    "assets/gallary/fire-event_2024/46.jpeg",
+    "assets/gallary/fire-event_2024/47.jpeg",
+    "assets/gallary/fire-event_2024/48.jpeg",
+    "assets/gallary/fire-event_2024/49.jpeg",
+    "assets/gallary/fire-event_2024/50.jpeg",
+    "assets/gallary/fire-event_2024/51.jpeg",
+    "assets/gallary/fire-event_2024/52.jpeg",
+    "assets/gallary/fire-event_2024/53.jpeg",
+    "assets/gallary/fire-event_2024/54.jpeg",
+    "assets/gallary/fire-event_2024/55.jpeg",
+    "assets/gallary/fire-event_2024/56.jpeg",
+    
+
+  
+  ],
+  fire2025: [
+    "assets/gallary/fire-event_2025/1.jpeg",
+    "assets/gallary/fire-event_2025/2.jpeg",
+    "assets/gallary/fire-event_2025/3.jpeg",
+    "assets/gallary/fire-event_2025/4.jpeg",
+    "assets/gallary/fire-event_2025/5.jpeg",
+    "assets/gallary/fire-event_2025/6.jpeg",
+    "assets/gallary/fire-event_2025/7.jpeg",
+    "assets/gallary/fire-event_2025/8.jpeg",
+    "assets/gallary/fire-event_2025/9.jpeg",
+    "assets/gallary/fire-event_2025/10.jpeg",
+    "assets/gallary/fire-event_2025/11.jpeg",
+    "assets/gallary/fire-event_2025/12.jpeg",
+    "assets/gallary/fire-event_2025/13.jpeg",
+    "assets/gallary/fire-event_2025/14.jpeg",
+    "assets/gallary/fire-event_2025/15.jpeg",
+    "assets/gallary/fire-event_2025/16.jpeg",
+    "assets/gallary/fire-event_2025/17.jpeg",
+    "assets/gallary/fire-event_2025/18.jpeg",
+    "assets/gallary/fire-event_2025/19.jpeg",
+    "assets/gallary/fire-event_2025/20.jpeg",
+    "assets/gallary/fire-event_2025/21.jpeg",
+    "assets/gallary/fire-event_2025/22.jpeg",
+    "assets/gallary/fire-event_2025/23.jpeg",
+    "assets/gallary/fire-event_2025/24.jpeg",
+    "assets/gallary/fire-event_2025/25.jpeg",
+    "assets/gallary/fire-event_2025/26.jpeg",
+    "assets/gallary/fire-event_2025/27.jpeg",
+    "assets/gallary/fire-event_2025/28.jpeg",
+    "assets/gallary/fire-event_2025/29.jpeg",
+    "assets/gallary/fire-event_2025/30.jpeg",
+    "assets/gallary/fire-event_2025/31.jpeg",
+    "assets/gallary/fire-event_2025/32.jpeg",
+    "assets/gallary/fire-event_2025/33.jpeg",
+    "assets/gallary/fire-event_2025/34.jpeg",
+    "assets/gallary/fire-event_2025/35.jpeg",
+    "assets/gallary/fire-event_2025/36.jpeg",
+    "assets/gallary/fire-event_2025/37.jpeg",
+    "assets/gallary/fire-event_2025/38.jpeg",
+    "assets/gallary/fire-event_2025/39.jpeg",
+    "assets/gallary/fire-event_2025/40.jpeg",
+    "assets/gallary/fire-event_2025/41.jpeg",
+    "assets/gallary/fire-event_2025/42.jpeg",
+    "assets/gallary/fire-event_2025/43.jpeg",
+    "assets/gallary/fire-event_2025/44.jpeg",   
+    "assets/gallary/fire-event_2025/45.jpeg",
+    "assets/gallary/fire-event_2025/46.jpeg",
+    "assets/gallary/fire-event_2025/47.jpeg",
+    "assets/gallary/fire-event_2025/48.jpeg",
+    "assets/gallary/fire-event_2025/49.jpeg",
+    "assets/gallary/fire-event_2025/50.jpeg",
+    "assets/gallary/fire-event_2025/51.jpeg",
+    "assets/gallary/fire-event_2025/52.jpeg",
+    "assets/gallary/fire-event_2025/53.jpeg",
+    
+
+
+  ],
+
   RegICON2025: [
     "assets/gallary/RegICON2025/1.jpeg",
     "assets/gallary/RegICON2025/2.jpeg",
@@ -254,12 +356,27 @@ const galleryData = {
     "assets/gallary/PHD_Defence/6.jpeg",
     "assets/gallary/PHD_Defence/7.jpeg",
     "assets/gallary/PHD_Defence/8.jpeg",
+    "assets/gallary/PHD_Defence/9.jpeg",
+    "assets/gallary/PHD_Defence/10.jpeg",
+    "assets/gallary/PHD_Defence/11.jpeg",
+    "assets/gallary/PHD_Defence/12.jpeg",
+
     
   ],
   ACM_India_Annual_Event_2020: [
     "assets/gallary/ACM_India_2020/1.jpeg",
     "assets/gallary/ACM_India_2020/2.jpeg",
     "assets/gallary/ACM_India_2020/3.jpeg",
+    "assets/gallary/ACM_India_2020/4.jpeg",
+    "assets/gallary/ACM_India_2020/5.jpeg",
+    "assets/gallary/ACM_India_2020/6.jpeg",
+    "assets/gallary/ACM_India_2020/7.jpeg",
+    "assets/gallary/ACM_India_2020/8.jpeg",
+    "assets/gallary/ACM_India_2020/9.jpeg",
+    "assets/gallary/ACM_India_2020/10.jpeg",
+    "assets/gallary/ACM_India_2020/11.jpeg",
+
+
   ]
 };
 
