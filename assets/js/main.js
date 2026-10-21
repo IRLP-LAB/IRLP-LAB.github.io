@@ -1,3 +1,5 @@
+// Shared slideshow and navigation; isolated from page-specific scripts.
+(() => {
 // Image Rotator Logic
 const images = [
   'assets/IRLAB @ DAU GANDHINAGAR (2).jpg',
@@ -64,3 +66,5 @@ document.querySelectorAll(".dropdown > a").forEach((dropdownLink) => {
     }
   });
 });
+
+})();

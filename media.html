@@ -8,7 +8,8 @@
   <link rel="icon" href="assets/favicon.ico" />
   <link rel="apple-touch-icon" href="assets/logo192.png" />
   <link rel="manifest" href="assets/manifest.json" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <title>IRLP Lab</title>
 </head>
@@ -62,7 +63,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Media Coverage</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
 </head>
 <body>
   <div class="media-container">
@@ -127,7 +129,7 @@
 
       <div class="media-item">
         <a href="https://timesofindia.indiatimes.com/city/ahmedabad/sunday-special-how-bhashini-is-teaching-ai-to-speak-22-indian-languages/amp_articleshow/128650767.cms" target="_blank">
-          <img src="assets/media/media-resource9.jpg" alt="Times of India Ahmedabad Article" />
+          <img src="assets/media/media resource9.jpeg" alt="Times of India Ahmedabad Article" />
         </a>
         <p>Ahmedabad Edition</p>
       </div>
@@ -144,29 +146,7 @@
   <img src="" alt="Zoomed Image" class="lightbox-img" id="lightboxImg">
 </div>
 
-<script>
-  const zoomImages = document.querySelectorAll('.zoom-target');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightboxImg');
-  const closeBtn = document.getElementById('closeLightbox');
-
-  zoomImages.forEach(img => {
-    img.addEventListener('click', () => {
-      lightboxImg.src = img.src;
-      lightbox.classList.add('active');
-    });
-  });
-
-  closeBtn.addEventListener('click', () => {
-    lightbox.classList.remove('active');
-  });
-
-  lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) {
-      lightbox.classList.remove('active');
-    }
-  });
-</script>
+<script src="assets/js/media.js"></script>
 
 
 
@@ -185,7 +165,7 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
 
