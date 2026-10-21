@@ -9,6 +9,7 @@ Use the folder matching the person's category. Existing photo filenames have bee
 | Faculty | `assets/people/faculty/` | `people_current.html`, Faculty section |
 | PhD students | `assets/people/phd/` | `people_current.html`, Ph.D. Students section |
 | PG students | `assets/people/pg/` | `people_current.html`, PG Students section |
+| UG students | `assets/people/ug/` | `people_current.html`, UG Students section |
 | Staff | `assets/people/staff/` | `people_current.html`, Staff Members section |
 | Alumni | `assets/people/alumni/` | `people-alumni.html` |
 
@@ -73,7 +74,7 @@ Use only confirmed role and organization details. If retaining the photo, move i
 | Homepage rotating photos | `images` list in `assets/js/main.js` |
 | Colors, shadows, borders, and hover styling | `assets/css/theme.css` |
 | Layout, spacing, card sizes, and responsive breakpoints | `assets/css/style.css` |
-| Faculty, PhD students, PG students, or staff | `people_current.html` |
+| Faculty, PhD students, PG students, UG students, or staff | `people_current.html` |
 | Alumni names and roles | `people-alumni.html` |
 | Research projects and grants | `research-projects.html` |
 | Computer specifications | `research-resources.html` |

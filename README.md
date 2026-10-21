@@ -16,7 +16,7 @@ Open http://localhost:8000. Press Ctrl+C to stop the server. After changing styl
 ```text
 IRLP-LAB.github.io/
   index.html                  Home
-  people_current.html         Faculty, PhD, PG students, and staff
+  people_current.html         Faculty, PhD, PG, UG students, and staff
   people-alumni.html          Alumni
   research-projects.html      Research projects
   research-resources.html     Computing resources
@@ -37,6 +37,7 @@ IRLP-LAB.github.io/
       faculty/                Faculty photos
       phd/                    Current PhD student photos
       pg/                     Current PG student photos
+      ug/                     Current UG student photos
       staff/                  Staff photos
       alumni/                 Alumni photos
       unassigned/             Photos whose identities are not established
